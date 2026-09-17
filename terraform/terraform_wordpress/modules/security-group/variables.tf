@@ -31,7 +31,7 @@ variable "ssh_cidr" {
 
 variable "egress_protocol" {
   description = "value"
-  type        = number
+  type        = string
   default     = "-1"
 }
 
@@ -39,11 +39,4 @@ variable "egress_from_port" {
   description = "Starting port for outbound traffic"
   type        = number
   default     = 0
-}
-
-variable "egress_to_port" {
-  description = "Ending port for outbound traffic"
-  type        = number
-  default     = 0
-
 }
