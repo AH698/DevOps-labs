@@ -3,6 +3,8 @@
 This project demonstrates how to deploy a WordPress site on an AWS EC2 instance using Terraform. Apache, PHP, MariaDB and WordPress are installed automatically at boot through a user-data script, so the site is ready without any manual setup after terraform apply.
 
 ## Terraform code structure
+
+```
 terraform_wordpress/
 ├── main.tf                     # Calls the three modules and passes values between them
 ├── variables.tf                # Root input variables
@@ -26,4 +28,4 @@ terraform_wordpress/
         ├── main.tf             # EC2 instance definition
         ├── variables.tf
         └── outputs.tf          # Instance details
-
+```
