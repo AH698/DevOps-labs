@@ -1,0 +1,16 @@
+#cloud-config
+
+package_update: true
+
+packages:
+  - httpd
+
+
+
+write_files:
+  - path: /var/www/html/index.html
+    content: | 
+     <h1>You have successfully configured your 'cloud-init.yml' file.</h1>      
+runcmd: 
+  - systemctl enable httpd 
+  - systemctl start httpd
