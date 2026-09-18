@@ -3,6 +3,8 @@
 This project demonstrates how to deploy an EC2 instance with Terraform and configure it entirely through a cloud-init YAML file. Apache is installed, a static page is written and the service is started at first boot, so the web server is live without anyone logging into the instance.
 
 ## Terraform code structure
+
+```
 terraform_cloud_init_yml/
 ├── main.tf                     # Calls both modules and passes values between them
 ├── variables.tf                # Root input variables
@@ -22,3 +24,4 @@ terraform_cloud_init_yml/
         ├── main.tf             # EC2 instance definition
         ├── variables.tf
         └── outputs.tf          # Public IP of the instance
+```
