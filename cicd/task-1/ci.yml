@@ -1,3 +1,7 @@
+# Moved to task-1 because done with this YAML file however 
+# when you want to run this it must be in the .github/workflows
+# otherwise pipeline will not work
+
 name: Linting a Dockerfile 
 on: [push]
 
